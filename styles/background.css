@@ -43,7 +43,7 @@ body header {
 }
 
 .background canvas {
-    background: url('images/background.png') center center no-repeat;
+    background: url('../images/background.png') center center no-repeat;
     background-size: cover;
     width: 100% !important;
     height: 100% !important;
@@ -51,7 +51,7 @@ body header {
 }
 
 .content-background canvas {
-    background: url('images/content-background.png') center center no-repeat;
+    background: url('../images/modal-background.png') center center no-repeat;
     background-size: cover;
 }
 
