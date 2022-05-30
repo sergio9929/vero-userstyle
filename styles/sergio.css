@@ -1,31 +1,31 @@
-body {
+.sergio body {
     background-color: #171717;
 }
 
-body footer, body header {
+.sergio body footer, body header {
     background-color: #111;
     transition: opacity .2s;
 }
 
-.background canvas {
+.sergio .background canvas {
 /*     display: none; */
     opacity: .1
 }
 
-.content-inner {
+.sergio .content-inner {
     max-width: 1920px;
     width: 100%;
 }
 
-body view.profile .profile-header .user-details {
+.sergio body view.profile .profile-header .user-details {
     vertical-align: middle;
 }
 
-body view.profile .grid-filters-container .grid-filters {
+.sergio body view.profile .grid-filters-container .grid-filters {
     justify-content: flex-start;
 }
 
-.user-posts {
+.sergio .user-posts {
     float: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -33,7 +33,7 @@ body view.profile .grid-filters-container .grid-filters {
     margin-top: 40px;
 }
 
-li.post-preview {
+.sergio li.post-preview {
     margin: 0 !important;
     width: auto;
     height: auto;
@@ -44,13 +44,13 @@ li.post-preview {
     transition: transform .25s ease-out, box-shadow .25s;
 }
 
-li.post-preview:hover {
+.sergio li.post-preview:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 0px 4px rgb(0 204 204), 0px 10px 45px -10px rgb(0 0 0 / 90%);
     z-index: 1;
 }
 
-li.post-preview a .preview-content {
+.sergio li.post-preview a .preview-content {
     position: absolute;
     height: 100%;
     z-index: 0;
@@ -58,20 +58,20 @@ li.post-preview a .preview-content {
     transition: transform .25s ease-out;
 }
 
-li.post-preview:hover a .preview-content {
+.sergio li.post-preview:hover a .preview-content {
     transform: scale(1);
 }
 
-li.post-preview a .preview-footer {
+.sergio li.post-preview a .preview-footer {
     background: linear-gradient(rgb(0 0 0 / 75%) 20%, transparent );
     max-height: 50%;
 }
 
-li.post-preview, li.post-preview a .preview-content {
+.sergio li.post-preview, li.post-preview a .preview-content {
     float: none !important;
 }
 
-li.post-preview a .preview-footer, li.post-preview a .preview-footer .post-type {
+.sergio li.post-preview a .preview-footer, li.post-preview a .preview-footer .post-type {
     float: none !important;
 }
 
@@ -81,54 +81,54 @@ li.post-preview a .preview-footer, li.post-preview a .preview-footer .post-type 
 /* ventana emergente */
 
 @media (min-width: 736px) {
-    body.modal-opened.modal-options-menu .profile {
+    .sergio body.modal-opened.modal-options-menu .profile {
         filter: blur(20px);
     }
 
-    body.midview-opened .profile {
+    .sergio body.midview-opened .profile {
         filter: blur(20px);
         transition: filter .5s;
     }
 
-    .post-container {
+    .sergio .post-container {
         opacity: 0;
     }
 
-    body.midview-opened .post-container {
+    .sergio body.midview-opened .post-container {
         transition: transform .5s, opacity .5s;
         transform: scale(1);
         opacity: 1;
     }
 
-    .midview-bg {
+    .sergio .midview-bg {
         transition: opacity .3s;
     }
 
-    body.midview-opened .midview-bg .midview-dialog .mid-btn {
+    .sergio body.midview-opened .midview-bg .midview-dialog .mid-btn {
         transition: transform .5s .1s;
         transform: translateX(0px);
     }
 
-    body .midview-bg .midview-dialog .prev-btn {
+    .sergio body .midview-bg .midview-dialog .prev-btn {
         transform: translateX(50px);
     }
 
-    body .midview-bg .midview-dialog .next-btn {
+    .sergio body .midview-bg .midview-dialog .next-btn {
         transform: translateX(-50px);
     }
 
-    body .midview-bg .midview-dialog .midview-post {
+    .sergio body .midview-bg .midview-dialog .midview-post {
         border-radius: 10px;
     }
 
-    .post-container {
+    .sergio .post-container {
         border-radius: 10px;
         background-color: rgba(34 34 34 / 90%);
         box-shadow: 0 7px 20px 0 rgb(0 0 0 / 30%);
         transform: scale(.8);
     }
 
-    .post-container .post-visual-content.desktop {
+    .sergio .post-container .post-visual-content.desktop {
         border-radius: 10px;
     }
 
@@ -136,28 +136,28 @@ li.post-preview a .preview-footer, li.post-preview a .preview-footer .post-type 
     
     /* fondo borroso de la ventana emergente */
     
-    body .midview-bg .midview-dialog .post-container {
+    .sergio body .midview-bg .midview-dialog .post-container {
         overflow: hidden;
     }
 
-    body .midview-bg .midview-dialog .post-visual-content, body .midview-bg .midview-dialog .content-background {
+    .sergio body .midview-bg .midview-dialog .post-visual-content, body .midview-bg .midview-dialog .content-background {
         display: contents!important;
         position: static!important;
         transform: none!important;
     }
 
-    body .midview-bg .midview-dialog .content-wrapper.portrait {
+    .sergio body .midview-bg .midview-dialog .content-wrapper.portrait {
         position: static!important;
         transform: none!important;
     }
 
-    body .midview-bg .midview-dialog .content-background>canvas {
+    .sergio body .midview-bg .midview-dialog .content-background>canvas {
         width: 100%!important;
         height: auto!important;
         opacity: .2;
     }
 
-    body .midview-bg .midview-dialog .mid-dialog-spinner.post-img {
+    .sergio body .midview-bg .midview-dialog .mid-dialog-spinner.post-img {
         top: 0!important;
         left: 0!important;
         width: 400px!important;
@@ -168,7 +168,7 @@ li.post-preview a .preview-footer, li.post-preview a .preview-footer .post-type 
         align-items: center!important;
     }
 
-    body .midview-bg .midview-dialog .mid-dialog-spinner.post-img img {
+    .sergio body .midview-bg .midview-dialog .mid-dialog-spinner.post-img img {
         display: block;
     }
 }

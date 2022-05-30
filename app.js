@@ -78,14 +78,9 @@ gridFilter.forEach(filter => {
 
 
 document.querySelector('.comparison .before').addEventListener('click', () => {
-    document.querySelector('link[href="sergio.css"]')?.remove();
+    document.documentElement.classList.remove('sergio');
 })
 
 document.querySelector('.comparison .after').addEventListener('click', () => {
-    if (!document.querySelector('link[href="sergio.css"]')) {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'sergio.css';
-        document.head.appendChild(link)
-    }
+    document.documentElement.classList.add('sergio');
 })
