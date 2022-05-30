@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="VERO™ – True Social">
+    <meta property="og:description" content="VERO™ – True Social">
+    <meta property="og:site_name" content="Sergio Rodríguez on VERO™">
+    <meta property="og:title" content="Sergio Rodríguez on VERO™">
+    <title>Sergio Rodríguez on VERO™</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="sergio.css">
+
+    <script src="app.js" type="text/javascript" defer></script>
+</head>
+
+<body class="gridview-ready windows not-search-only can-load-more-posts" style="width: unset;">
+    <div class="comparison">
+        <a class="button" href="https://userstyles.world/style/3617/vero-tweaks-for-pc">Install userstyle ↗</a>
+        <span style="margin-left: 10px;">preview: </span> 
+        <button class="before">before</button>
+        <button class="after">after</button>
+    </div>
+
+    <header class="">
+    <div class="title-nav-wrapper">
+    <h1 class="site-title">
+    <a href="https://vero.co">
+    <img alt="VERO™ True Social" src="images/vero.svg">
+    </a>
+    <div class="site-version">
+    </div></h1>
+    <a class="search-icon" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.toggleSearch(this);" style="right: 0px;">
+    <img alt="Search on VERO™" class="open-icon" src="images/search-icon.svg">
+    <img alt="Close button" class="close-icon" src="images/close-icon.svg">
+    </a>
+    <div class="comments-header" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.toggleComments()">Comments</div>
+    <div class="likes-header" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.toggleLikes()">Likes</div>
+    <a class="mid-btn close-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.closeMidview();">
+    <img alt="Close button" src="images/close-icon.svg">
+    </a>
+    </div>
+    </header>
+    <view class="search search-overlay hidden">
+    <div class="content">
+    <div class="content-inner">
+    <div class="search-field">
+    <div class="search-title">Search for a user</div>
+    <form action="javascript:loadResult()" method="GET">
+    <input class="search-placeholder" spellcheck="false" autocomplete="off" id="placeholder" type="text" value="Search">
+    <input class="search-input" spellcheck="false" autocomplete="off" id="username" type="text" name="q" minlength="2" value="">
+    </form>
+    </div>
+    <ul class="search-results">
+    </ul>
+    </div>
+    </div>
+    </view>
+    <div class="background" style="opacity: 0.6;"><canvas width="600" height="600" style="width: 1976px; height: 1976px; left: 0px; top: -334.5px;"></canvas></div>
+    
+    <view class="profile" id="b-3dwT5cPf6xqV6N3W8VDN8c~sergio9929">
+    <div class="content">
+    <div class="content-inner">
+    <div class="profile-header">
+    <a>
+    <div class="options options-mobile" onclick="optionsModals.openOptionsFromProfile();" style="right: 0px;"></div>
+    </a>
+    <div class="user-avatar disabled">
+    <a href="" target="_parent">
+    <img onerror="this.onerror=null;this.srcset='images/avatar-default.png 1x';this.src='images/avatar-default.png';" alt="User avatar" src="content/cccdb0cc-92a5-4413-8592-b4e69749a922_130x130.jpg" srcset="content/cccdb0cc-92a5-4413-8592-b4e69749a922_130x130.jpg 1x, content/cccdb0cc-92a5-4413-8592-b4e69749a922_260x260.jpg 2x">
+    </a>
+    </div>
+    <div class="user-details">
+    <div class="username">
+    <h2>
+    <span>Sergio Rodríguez</span>
+    </h2>
+    <div class="username-tag">@sergio9929</div>
+    <a>
+    <div class="options options-desktop" onclick="optionsModals.openOptionsFromProfile();"></div>
+    </a>
+    </div>
+    <ul class="user-socialrel">
+    <li class="data-number" data-number="2"><span class="ct">2</span> Followers</li>
+    <li class="separator">-</li>
+    <li class="data-number" data-number="2"><span class="ct">2</span> Following</li>
+    </ul>
+    <div class="app-links">
+    <img src="images/download-on-the-app-store-badge-us-uk-rgb-blk-092917@2x.png" class="app-store" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.openAppLink();">
+    <img src="images/google-play-badge-rgb@2x.png" class="google-play" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.openAppLink();">
+    </div>
+    </div>
+    </div>
+    <div class="grid-filters-container">
+    <ul class="grid-filters">
+    <li class="grid-filter selected" id="filter-all">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">ALL</span>
+    <span class="filter-underline" style="background: linear-gradient(to right, rgb(0, 204, 204) 0%, rgb(0, 204, 204) 100%);">
+    </span></li>
+    <li class="grid-filter" id="filter-featured">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">FEATURED</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-person">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">INTROS</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-photo">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">PHOTOS</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-video">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">VIDEOS</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-link">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">LINKS</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-music">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">MUSIC</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-movie">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">MOVIES/TV</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    
+    <li class="grid-filter" id="filter-book">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">BOOKS</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-place">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">PLACES</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-application">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">APPS</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    <li class="grid-filter" id="filter-game">
+    <span class="filter-text" style="background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);">GAMES</span>
+    <span class="filter-underline" style="background: none;">
+    </span></li>
+    </ul>
+    </div>
+    <noscript>
+                <div class="no-script">JavaScript must be enabled to view content.</div>
+              </noscript>
+    <div class="posts-container"><ul class="user-posts grid-0 grid-group-0"><li class="post-preview movie" id="post-K-n69fsthxKQ9RxpSXKMXt1H" data-time="1653607296912" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('K-n69fsthxKQ9RxpSXKMXt1H');">
+                  <div class="preview-content " style="background-image: url('content/e8e72f53-f7ce-49af-9e71-a5f3827ebc5f_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">Movie</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">The Summit of the Gods</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-X-zxSpGrQsBpStjBQZ7Vc9ZC" data-time="1653534757391" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('X-zxSpGrQsBpStjBQZ7Vc9ZC');">
+                  <div class="preview-content " style="background-image: url('content/557c929d-fda5-4f0f-9d42-556bc55f6550_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Tokyo Vice</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-5f9N-P7mLmTpSzNthgKTccTN" data-time="1653268267178" style="position: relative; pointer-events: all; margin-right: 0px;">
+                <a onclick="vero.openMidview('5f9N-P7mLmTpSzNthgKTccTN');">
+                  <div class="preview-content " style="background-image: url('content/a5ed1cb9-65c7-43f8-9f63-f9141d0ac147_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Haikyu!!</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-QcF-Ds8RCX51GshfzLTrgkQG" data-time="1652748232576" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('QcF-Ds8RCX51GshfzLTrgkQG');">
+                  <div class="preview-content " style="background-image: url('content/c4a70458-57e4-4e59-a80f-4247c5811840_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Pachinko</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-dS-nhhS8Jhr1WswZPzNqZ79s" data-time="1652561339803" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('dS-nhhS8Jhr1WswZPzNqZ79s');">
+                  <div class="preview-content " style="background-image: url('content/cbececa8-bce5-474b-b143-cf182186584d_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">Movie</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">The Northman</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-kGR3-v2HjbsBtnS5PM9pGp6C" data-time="1652115786383" style="position: relative; pointer-events: all; margin-right: 0px;">
+                <a onclick="vero.openMidview('kGR3-v2HjbsBtnS5PM9pGp6C');">
+                  <div class="preview-content " style="background-image: url('content/1695c5b4-25b7-490a-a644-9fff8a2477b6_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">Movie</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Train to Busan</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-rn-zg9BtKkdLchZ41kjNNS7g" data-time="1652034492043" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('rn-zg9BtKkdLchZ41kjNNS7g');">
+                  <div class="preview-content " style="background-image: url('content/3a88d881-4df0-48d8-8ffa-8d054ea995d9_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Heartstopper</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-nR5-zMKGVqrKFLQN5BxtH3c3" data-time="1651467660252" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('nR5-zMKGVqrKFLQN5BxtH3c3');">
+                  <div class="preview-content " style="background-image: url('content/fb9e60a6-9ea0-4e54-8dc1-a0ba8c99c0cb_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Severance</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-7n-Zg4MJbLMWNhFZkspzcbvK" data-time="1651111454469" style="position: relative; pointer-events: all; margin-right: 0px;">
+                <a onclick="vero.openMidview('7n-Zg4MJbLMWNhFZkspzcbvK');">
+                  <div class="preview-content " style="background-image: url('content/c1753719-9f00-4a21-be51-4e0b90947dbc_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Keep Your Hands Off Eizouken!</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-4G-8DKkgLGqd8zjshcpd357g" data-time="1650841396207" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('4G-8DKkgLGqd8zjshcpd357g');">
+                  <div class="preview-content " style="background-image: url('content/e9a1fc4c-f001-4768-b657-99ee3796d498_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">Movie</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">City of God</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-z-nJK3R85rFBTPxC1LntWx43" data-time="1650763549983" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('z-nJK3R85rFBTPxC1LntWx43');">
+                  <div class="preview-content " style="background-image: url('content/fafd7acf-a11d-4a3d-9f49-00a0fbba2494_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Ranking of Kings</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-g-XPvbf76bfwBSL3jbPZqVB7" data-time="1650106798985" style="position: relative; pointer-events: all; margin-right: 0px;">
+                <a onclick="vero.openMidview('g-XPvbf76bfwBSL3jbPZqVB7');">
+                  <div class="preview-content " style="background-image: url('content/63c7c6a0-7148-43f4-a865-c517d35faeb3_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">ピンポン</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-T2f-pfBhtSN349k4HLPLhN8F" data-time="1649853327226" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('T2f-pfBhtSN349k4HLPLhN8F');">
+                  <div class="preview-content " style="background-image: url('content/6ffe1a6b-c34d-48ce-8d3d-f54486b5095b_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">コタローは1人暮らし</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-p5L7-GmcFcTVc2jVZj8mbz29" data-time="1649520286029" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('p5L7-GmcFcTVc2jVZj8mbz29');">
+                  <div class="preview-content " style="background-image: url('content/139c6a35-6aa2-4f29-96f8-cdf285c931db_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">８６―エイティシックス―</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-nV7-d8tnzgV14ZZxPtfgzMzS" data-time="1649225265796" style="position: relative; margin-right: 0px; pointer-events: all;">
+                <a onclick="vero.openMidview('nV7-d8tnzgV14ZZxPtfgzMzS');">
+                  <div class="preview-content " style="background-image: url('content/46016ec9-2431-402b-b154-4b8d59aeddae_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">転生したらスライムだった件</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-5BJQ-7F4MFr3r3tnSXmPW66q" data-time="1648695840359" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('5BJQ-7F4MFr3r3tnSXmPW66q');">
+                  <div class="preview-content " style="background-image: url('content/e5dfb26d-8bab-43d7-aedb-5b26ea061238_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">L'amica geniale</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-qZfL-rxwkcFcg32pTpdmdnsF" data-time="1648407839411" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('qZfL-rxwkcFcg32pTpdmdnsF');">
+                  <div class="preview-content " style="background-image: url('content/e0f9652b-9256-4d5e-a7a5-ac32eeb28a8c_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">Dopesick</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-z-drDNkc5mqvGzkHq5CCJvWR" data-time="1647992431692" style="position: relative; pointer-events: all; margin-right: 0px;">
+                <a onclick="vero.openMidview('z-drDNkc5mqvGzkHq5CCJvWR');">
+                  <div class="preview-content " style="background-image: url('content/1efa7d99-6282-4c2f-be3f-055691336ee0_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">The Wire</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-GHS-bvV69MFmF14FfvBT2JVr" data-time="1647378284920" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('GHS-bvV69MFmF14FfvBT2JVr');">
+                  <div class="preview-content " style="background-image: url('content/bb0fdf6b-4754-4ee4-a390-9cb00d432950_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">無職転生 ～異世界行ったら本気だす～</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-xn-XMQ65QPM5v72RkwpXbMNK" data-time="1647199745467" style="position: relative; pointer-events: all;">
+                <a onclick="vero.openMidview('xn-XMQ65QPM5v72RkwpXbMNK');">
+                  <div class="preview-content " style="background-image: url('content/f4a1e5c5-85a3-42aa-ad57-01021a4be8c3_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">The Last Kingdom</div>
+            </div>
+          </div>
+                </a>
+              </li><li class="post-preview movie" id="post-BL7-8DqTF15w3ZpkPLcMTXPc" data-time="1646922638575" style="position: relative; pointer-events: all; margin-right: 0px;">
+                <a onclick="vero.openMidview('BL7-8DqTF15w3ZpkPLcMTXPc');">
+                  <div class="preview-content " style="background-image: url('content/cf4b3ae9-d6ba-47da-9c66-252b45bf1e38_246x246.jpg')"></div>
+          <div class="preview-footer">
+            <div class="post-type movie">TV</div>
+            <div class="preview-caption">
+              <div class="preview-caption-text">古見さんは、コミュ症です。</div>
+            </div>
+          </div>
+                </a>
+              </li></ul><ul class="user-posts-temporary grid-temp-0 grid-group-0"></ul></div>
+    
+    <div class="user-posts-spinner hidden removed">
+    <img alt="Spinner" src="images/spinner.svg">
+    </div>
+    <p class="no-user-posts-filtered removed"><span class="filters-picto"></span><span class="filters-label"></span>
+    </p>
+    <p class="user-posts-error removed">Loading error</p>
+    
+    <div class="grid-more-post-container">
+    <a class="big-btn show-more" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.showNextPosts();">SHOW MORE</a>
+    </div>
+    </div>
+    </div>
+    </view>
+    <div class="midview-bg hidden" onscroll="if (!window.__cfRLUnblockHandlers) return false; vero.onScroll();" style="padding-right: unset; background-color: rgba(0, 0, 0, 0.6); margin-top: unset; overflow-y: auto;">
+    <div class="midview-dialog" style="align-items: center;">
+    <a class="mid-btn prev-btn disabled" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.showPostDelta(-1);">
+    <img alt="arrow" src="images/arrow.png">
+    </a>
+    <div class="mid-dialog-spinner" style="opacity: 0;">
+    <img alt="spinner" src="images/spinner.svg">
+    </div>
+    <p class="mid-dialog-error" style="opacity: 0;">Loading error</p>
+    <a class="mid-btn next-btn disabled" onclick="if (!window.__cfRLUnblockHandlers) return false; vero.showPostDelta(1);">
+    <img alt="arrow" src="images/arrow.png">
+    </a>
+    </div>
+    </div>
+    <div class="modal-bg hidden">
+    <div class="modal">
+    <div class="modal-container options-menu">
+    <ul>
+    <li class="" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.openModal('share');">Share</li>
+    <li class="embed-post" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.openModal('embedCode');">Embed Post</li>
+    <li class="embed-profile" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.openModal('embedCode');">Embed Profile</li>
+    <li class="" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.openModal('link');">Copy Link</li>
+    
+    <li class="faded" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.closeModals();">Cancel</li>
+    </ul>
+    </div>
+    <div class="modal-container get-embed-code get-embed-code-post">
+    <div class="modal-header">
+     <div class="modal-title">Embed Post</div>
+    </div>
+    <div class="modal-content">
+    <label>Add the embed post by copying this code below.</label>
+    <textarea onfocusout="this.focus(); this.select()" readonly=""></textarea>
+    <a class="modal-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.copyInputToClipboard('get-embed-code-post');">Copy embed code</a>
+    </div>
+    </div>
+    <div class="modal-container get-embed-code get-embed-code-profile">
+    <div class="modal-header">
+    <div class="modal-title">Embed Profile</div>
+    </div>
+    <div class="modal-content">
+    <label>Add the embed profile by copying this code below.</label>
+    <textarea onfocusout="this.focus(); this.select()" readonly=""></textarea>
+    <fieldset>
+    <span class="radio" id="bg-transparent" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.toggleRadio(this)"></span>
+    <label for="bg-transparent" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.toggleRadio(this)">Use a transparent background</label>
+    </fieldset>
+    <fieldset>
+    <select id="post-count">
+    <option value="6" selected="">6</option>
+    <option value="9">9</option>
+    <option value="12">12</option>
+    <option value="15">15</option>
+    <option value="18">18</option>
+    <option value="21">21</option>
+    </select>
+    <label for="post-count">Post count to show</label>
+    </fieldset>
+    <a class="modal-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.prepareAndCopyInputToClipboard('get-embed-code-profile');">Copy embed code</a>
+    </div>
+    </div>
+    <div class="modal-container get-link get-link-profile">
+    <div class="modal-content">
+    <textarea onfocusout="this.focus(); this.select()" readonly=""></textarea>
+    </div>
+    </div>
+    <div class="modal-container get-link get-link-post">
+    <div class="modal-content">
+    <textarea onfocusout="this.focus(); this.select()" readonly=""></textarea>
+    </div>
+    </div>
+    
+    <div class="modal-container share">
+    <div class="modal-header">
+    <div class="modal-title">Share</div>
+    </div>
+    <div class="modal-content">
+    <div class="share-options">
+    <a class="facebook" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.share('facebook');">Share on Facebook</a>
+    <a class="twitter" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.share('twitter');">Share on Twitter</a>
+    <a class="email">Share on Email</a>
+    </div>
+    </div>
+    </div>
+    <div class="back-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.backModals();"></div>
+    <div class="close-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; optionsModals.closeModals();"></div>
+    </div>
+    <div class="bottom-message"></div>
+    </div>
+    <footer>
+    <div class="footer-wrapper">
+    <div class="badges">
+    <a href="https://get.vero.co/web-iOS" target="_blank" rel="noopener">
+    <img alt="Download VERO™ on App Store" src="images/en-badge-app-store.png">
+    </a>
+    <a href="https://get.vero.co/web-android" target="_blank" rel="noopener">
+    <img alt="Download VERO™ on Google Play" src="images/en-badge-google-play.png">
+    </a>
+    </div>
+    <p class="trademark">Vero and the Vero Logo Design are trademarks owned by Vero Labs, Inc. All rights reserved.</p>
+    </div>
+    </footer>
+    <script id="vero-profile-scripts" src="scripts/webview.js" type="text/javascript"></script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'71341781ccae86ba',m:'TJUhsC.GoSFewBrhIna6z37DVX5bi7yY8FZ49AeElsw-1653878288-0-AWefAID+5qTs2l49AhSk0NIyfr55uLzwKwz7xVswqz62+ziwkpL9W2LAn/O6x6FfBr+WRw4hL+cSopq5tNnEfp/0L+nTMVmZg2BiCOpZMUWL3Ksudnnjd7njykViL2BzBg==',s:[0xbf884574ac,0x4682fa6272],}})();</script>
+    
+</body>
+
+</html>

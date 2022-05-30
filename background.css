@@ -1,0 +1,69 @@
+.comparison {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100000;
+    padding: 0 calc(100vw*.02666667);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #bbb;
+}
+
+.comparison span {
+    z-index: 1;
+}
+
+.comparison :is(button, .button) {
+    color: #bbb;
+    margin: 0;
+    background-color: hsl(0 0% 7% / 50%);
+}
+
+:is(button, .button):is(:hover, :focus) {
+    color: #888;
+    background-color: hsl(0 0% 7% / 100%);
+}
+
+@media only screen and (max-width: 735px) {
+    .comparison {
+        height: 60px;
+    }
+
+    .comparison :is(button, .button) {
+        padding: 0 10px;
+    }
+}
+
+
+
+body header {
+    transition: opacity .2s;
+}
+
+.background canvas {
+    background: url('images/background.png') center center no-repeat;
+    background-size: cover;
+    width: 100% !important;
+    height: 100% !important;
+    inset: 0 !important;
+}
+
+.content-background canvas {
+    background: url('images/content-background.png') center center no-repeat;
+    background-size: cover;
+}
+
+.post-container {
+    opacity: 0;
+}
+
+body.midview-opened .post-container {
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+.midview-bg {
+    transition: opacity .2s;
+}
